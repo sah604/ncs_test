@@ -1,0 +1,28 @@
+package com.greedy.section02.stream;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+
+public class Application3 {
+	
+	public static void main(String[] args) {
+		
+		/* FileOutStream */
+		/*
+		 * 프로그램의 데이터를 파일로 내보내기 위한 용도의 스트링이다. 
+		 * */ // 프로그램이 읽어주기 위한
+		
+		FileOutputStream fout = null;
+		
+		try {
+			
+			fout = new FileOutputStream("src/com/greedy/section02/stream/testOutputStream.txt");
+		} catch (FileNotFoundException e) {
+			
+			e.printStackTrace();
+		}
+		
+		
+	}
+
+}
